@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0 2rem 0;
+  margin: v.$gutter * 2 0 v.$gutter * 2 0;
   &__input {
     width: 700px;
   }

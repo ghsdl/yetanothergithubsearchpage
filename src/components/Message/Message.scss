@@ -1,0 +1,14 @@
+@use '../../styles/vars.scss' as v;
+
+.message {
+  margin: 0 0 v.$gutter * 2 0;
+  background-color: white;
+  color: v.$text-color-dark;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  border: 0 !important;
+  border-radius: 30px;
+}
