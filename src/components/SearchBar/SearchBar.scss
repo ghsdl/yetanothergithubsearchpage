@@ -1,0 +1,27 @@
+@use '../../styles/vars.scss' as v;
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+  &__input {
+    width: 700px;
+  }
+}
+
+.btANOF {
+  border: 0 !important;
+  &::placeholder {
+    color: v.$text-color-dark;
+  }
+}
+
+.gXjtHS {
+  color: v.$background-color-dark;
+}
+
+.gXjtHS > svg {
+  width: 40px !important;
+  height: 40px !important;
+}
