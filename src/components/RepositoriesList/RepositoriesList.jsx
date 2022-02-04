@@ -8,8 +8,6 @@ const RepositoriesList = () => {
     <div className='repositories-list'>
       <Repositories />
       <Repositories />
-      <Repositories />
-      <Repositories />
     </div>
   );
 };
