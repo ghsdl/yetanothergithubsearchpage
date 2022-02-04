@@ -1,12 +1,17 @@
 import React from 'react';
+import { string } from 'prop-types';
 import './Message.scss';
 
-const Message = () => {
+const Message = ({ message }) => {
   return (
     <div className='message'>
-      <h1 className='message__content'>1322654654 results. Check them out.</h1>
+      <h1 className='message__content'>{message}</h1>
     </div>
   );
+};
+
+Message.propTypes = {
+  message: string.isRequired,
 };
 
 export default Message;
