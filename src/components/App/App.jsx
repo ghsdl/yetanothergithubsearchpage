@@ -22,7 +22,7 @@ const App = () => {
         const cleanRepositories = getRepositories(response.data.items);
         setRepositories(cleanRepositories);
         setMessage(
-          `${response.data.total_count} repos trouvés pour la recherche ${search}`,
+          `${response.data.total_count} repositories found for ${search}`,
         );
       })
       .catch((error) => {

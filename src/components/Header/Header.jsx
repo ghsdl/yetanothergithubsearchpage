@@ -6,7 +6,9 @@ import './Header.scss';
 const Header = () => {
   return (
     <header className='header'>
-      <img src={logo} alt='GitHub logo' className='header__logo' />
+      <a href='/'>
+        <img src={logo} alt='GitHub logo' className='header__logo' />
+      </a>
     </header>
   );
 };
