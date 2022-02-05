@@ -1,0 +1,45 @@
+@use '../../styles/vars.scss' as v;
+
+.repositories {
+  width: 275px;
+  padding: v.$gutter;
+  margin: 0 0 v.$gutter 0;
+  &__image {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    border-radius: v.$border-radius;
+    cursor: default;
+  }
+  &__name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.2rem;
+    margin: v.$gutter * 2 0 v.$gutter 0;
+    line-height: 2rem;
+  }
+  &__description {
+    font-size: 14px;
+    color: v.$text-color-dark;
+    margin: 0 0 v.$gutter 0;
+  }
+  &__border {
+    border: 0.1rem solid v.$text-color-dark;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin: v.$gutter 0 v.$gutter 0;
+  }
+  &__icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 v.$gutter 0 0;
+    color: v.$text-color-dark;
+  }
+  &__user {
+    font-size: 16px;
+  }
+}
