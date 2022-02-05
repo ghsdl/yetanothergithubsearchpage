@@ -8,14 +8,19 @@ const SearchBar = ({ input, onChange, onSubmit }) => {
   return (
     <div className='search'>
       <div className='rainbow-align-content_center rainbow-p-vertical_x-large rainbow-flex_wrap'>
-        <form onSubmit={() => onSubmit()}>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            onSubmit();
+          }}
+        >
           <Input
             type='search'
             label='application component search'
             hideLabel
             className='rainbow-p-around_medium search__input'
             style={styles}
-            placeholder='Search for repositories or users'
+            placeholder='Search for repositories'
             isCentered
             iconPosition='right'
             icon={<BiSearchAlt className='rainbow-color_gray-3 search__icon' />}

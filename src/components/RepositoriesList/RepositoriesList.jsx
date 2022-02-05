@@ -15,7 +15,7 @@ const RepositoriesList = ({ list }) => {
 };
 
 RepositoriesList.propTypes = {
-  results: arrayOf(
+  list: arrayOf(
     shape({
       id: number.isRequired,
     }),
