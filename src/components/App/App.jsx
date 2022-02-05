@@ -14,7 +14,7 @@ const App = () => {
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const chargeRepositories = () => {
+  const loadRepositories = () => {
     setLoading(true);
     axios
       .get(`https://api.github.com/search/repositories?q=${search}`)
@@ -30,6 +30,7 @@ const App = () => {
       })
       .finally(() => {
         setLoading(false);
+        setSearch('');
       });
   };
 
@@ -39,7 +40,7 @@ const App = () => {
       <SearchBar
         input={search}
         onChange={setSearch}
-        onSubmit={chargeRepositories}
+        onSubmit={loadRepositories}
       />
       {loading ? (
         <Loader />
