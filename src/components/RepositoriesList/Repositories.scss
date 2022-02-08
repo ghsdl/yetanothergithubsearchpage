@@ -3,7 +3,7 @@
 .repositories {
   width: 275px;
   padding: v.$gutter;
-  margin: 0 0 v.$gutter 0;
+  margin: v.$gutter;
   &__image {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: block;
@@ -42,4 +42,13 @@
   &__user {
     font-size: 16px;
   }
+}
+
+.repositories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 v.$gutter;
+  height: 50vh;
+  overflow: auto;
 }
